@@ -1,9 +1,6 @@
-package jpabook.jpashop;
+package jpabook.jpashop.domain;
 
-import jpabook.jpashop.domain.Book;
-import jpabook.jpashop.domain.Item;
-import jpabook.jpashop.domain.Order;
-import jpabook.jpashop.domain.OrderItem;
+import jpabook.jpashop.domain.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -30,11 +27,10 @@ public class JpaMain {
 
 //            em.persist(orderItem);
 
-            Book book = new Book();
-            book.setName("JPA");
-            book.setAuthor("이순철");
+            Member member = new Member();
+            member.setName("USER1");
 
-            em.persist(book);
+            em.persist(member);
 
 
             tx.commit();

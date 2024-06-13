@@ -34,6 +34,6 @@ public class DiceGame2 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new DiceGame2().solution(5r,3,3));
+        System.out.println(new DiceGame2().solution(5,3,3));
     }
 }
